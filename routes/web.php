@@ -11,6 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+
+Route::get('/{country}/{category}/{item}', 'ItemController@show_item');
+
+Route::get('/', 'ItemController@show_item');
+
+
