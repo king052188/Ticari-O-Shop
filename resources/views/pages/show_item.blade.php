@@ -69,36 +69,38 @@
 
         <div class="no-margin col-xs-12 col-sm-7 body-holder">
             <div class="body">
+                <div class="social-row" style="float: right;">
+                    <div class="fb-like" data-href="http://kpa.ph/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+                    <div class="fb-send" data-href="http://kpa.ph/"></div>
+                </div>
+
                 <div class="star-holder inline"><div class="star" data-score="4"></div></div>
-                <div class="availability"><label>Availability:</label><span class="available">  in stock</span></div>
+
+                <div class="star-holder inline"><label style="margin: 2px 0 0 10px;">200</label> <span style="font-size: .8em;">viewed</span></div>
 
                 <div class="title"><a href="#">VAIO fit laptop - windows 8 SVF14322CXW</a></div>
+
                 <div class="brand">sony</div>
-
-                <div class="social-row">
-                    <span class="st_facebook_hcount"></span>
-                </div>
-
-                <div class="buttons-holder">
-                    <label>200</label> <span style="font-size: .8em;">Views</span>
-                </div>
 
                 <div class="excerpt">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare turpis non risus semper dapibus. Quisque eu vehicula turpis. Donec sodales lacinia eros, sit amet auctor tellus volutpat non.</p>
                     <p style="font-size: .8em;">
                         <span class="delivery-option-supported"><i class="fa fa-money" aria-hidden="true"></i> <b>Cash on Delivery Available</b></span> |
-                        <span class="delivery-option-supported"><i class="fa fa-plane" aria-hidden="true"></i> <b>14 Day Easy Returns</b></span> |
-                        <span class="delivery-option-not-supported"><i class="fa fa-shield" aria-hidden="true"></i> <b>No Warranty Available</b></span>
+                        <span class="delivery-option-supported"><i class="fa fa-plane" aria-hidden="true"></i> <b>7 Day Easy Returns</b></span> |
+                        <span class="delivery-option-supported"><i class="fa fa-shield" aria-hidden="true"></i> <b>2 Months Local Supplier Warranty</b></span>
                     </p>
                 </div>
 
                 <div class="prices">
-                    <div id="price-current" class="price-current">0,000.00</div>
-                    <div id="price-prev" class="price-prev">0,000.00</div>
+                    <div id="price-current" class="price-current current">*,***.**</div>
+                    <div id="price-prev" class="price-prev">*,***.**</div>
                 </div>
 
-                <div id="new-amount" class="prices" style="display: none;">
-                    <div id="price-new" class="price-current" style="font-size: 1.8em;">0,000.00</div>
+                <div class="prices">
+                    <div class="price-current condition">100 available / 10 sold</div>
+                </div>
+                <div class="prices">
+                    <div class="price-current shipping-fee"><i class="fa fa-truck" aria-hidden="true"></i> Shipping Fee: NOT INCLUDED</div>
                 </div>
 
                 <div class="qnt-holder">
@@ -110,10 +112,7 @@
                         </form>
                     </div>
                     <a id="addto-cart" href="show-cart.html" class="le-button huge"><i class="fa fa-shopping-cart" aria-hidden="true"></i> add to cart</a>
-                    <a id="addto-cart" href="show-cart.html" class="le-button huge"><i class="fa fa-commenting" aria-hidden="true"></i> Send Message</a>
                 </div><!-- /.qnt-holder -->
-
-
 
             </div><!-- /.body -->
 
@@ -148,13 +147,13 @@
                         <span class="seperator">/</span>
 
                         <div class="inline">
-                            <label>14 Day Easy Returns</label>
+                            <label>7 Day Easy Returns</label>
                         </div><!-- /.inline -->
 
                         <span class="seperator">/</span>
 
                         <div class="inline">
-                            <label>No warranty available</label>
+                            <label>2 Months Local Supplier Warranty</label>
                         </div><!-- /.inline -->
                     </div><!-- /.meta-row -->
                 </div><!-- /.tab-pane #description -->

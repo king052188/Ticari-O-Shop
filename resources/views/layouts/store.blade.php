@@ -34,22 +34,28 @@
     <script>
         var php_usd = {{ $php_usd }};
         var local = "{{ $local['Currency'][0]['Type'] }}";
-        var item_price = 22210.55;
+        var item_price_current = 22210.55;
+        var item_price_previous = 29558.48;
     </script>
 </head>
 
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=259936581105419";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 <div class="wrapper">
     <!-- ============================================================= TOP NAVIGATION ============================================================= -->
     <nav class="top-bar animate-dropdown">
         <div class="container">
             <div class="col-xs-12 col-sm-6 no-margin">
                 <ul>
-                    <li>
-                        <span class="st_facebook_hcount"></span>
-                    </li>
-                    <li>|</li>
                     <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Disclaimer </a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div><!-- /.col -->
@@ -80,7 +86,7 @@
             <div class="col-xs-12 col-md-12 logo-holder">
                 <!-- ============================================================= LOGO ============================================================= -->
                 <div class="logo">
-                    <img src="/images/logo.jpg" />  <img src="/images/logo.jpg" />
+                    {{--<img src="/images/logo.jpg" />  <img src="/images/logo.jpg" />--}}
                 </div>
                 <!-- ============================================================= LOGO : END ============================================================= -->
 
@@ -160,8 +166,8 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/numeral.js/1.4.5/numeral.min.js"></script>
 <script>
     $(document).ready(function() {
-        var price_curr = price_(item_price);
-        var price_prev = price_(item_price + 9055.55);
+        var price_curr = price_(item_price_current);
+        var price_prev = price_(item_price_previous);
         $("#price_current_nav").text(price_curr);
         $("#price-current").text(price_curr);
         $("#price-prev").text(price_prev);

@@ -342,15 +342,23 @@ function price_(amount) {
             }
 
             currentQty = $(this).parent().parent().find('input').val();
+            var amount_a, amount_b;
+            if(currentQty == 0) {
+                $(this).parent().parent().find('input').val(1);
+            }
+
             if(currentQty > 1) {
-                var new_amount = item_price * currentQty;
-                var amount = price_(new_amount);
-                $("#new-amount").show();
-                $("#price-new").text(amount);
+                var new_amount_c = item_price_current * currentQty;
+                var new_amount_p = item_price_previous * currentQty;
+                amount_a = price_(new_amount_c);
+                amount_b = price_(new_amount_p);
             }
             else {
-                $("#new-amount").hide();
+                amount_a = price_(item_price_current);
+                amount_b = price_(item_price_previous);
             }
+            $("#price-current").text(amount_a);
+            $("#price-prev").text(amount_b);
         });
 
         // Price Slider
