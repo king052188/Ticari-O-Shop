@@ -12,12 +12,19 @@
 */
 
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/contact-us', 'PageController@contact');
 
 Route::get('/{country}/{category}/{item}', 'ItemController@show_item');
 
-Route::get('/', 'ItemController@show_item');
+Route::get('/{hex}', 'ItemController@validate_item');
+
+
+
+
+
 
 

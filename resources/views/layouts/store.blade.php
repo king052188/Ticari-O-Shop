@@ -54,9 +54,9 @@
         <div class="container">
             <div class="col-xs-12 col-sm-6 no-margin">
                 <ul>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Disclaimer </a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#faq" data-toggle="modal" data-target="#faq">FAQ</a></li>
+                    <li><a href="#disclaimer" data-toggle="modal" data-target="#disclaimer">Disclaimer</a></li>
+                    <li><a href="#contact" data-toggle="modal" data-target="#contact">Contact</a></li>
                 </ul>
             </div><!-- /.col -->
 
@@ -145,6 +145,96 @@
     <!-- ============================================================= FOOTER : END ============================================================= -->
 
 </div><!-- /.wrapper -->
+
+<!-- Trigger the modal with a button -->
+
+<!-- Modal -->
+<div id="faq" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">FAQ</h4>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="disclaimer" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Disclaimer</h4>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="contact" class="modal fade" role="dialog" >
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Contact Us - Leave a Message</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <section class="section leave-a-message">
+                            <p>Maecenas dolor elit, semper a sem sed, pulvinar molestie lacus. Aliquam dignissim, elit non mattis ultrices, neque odio ultricies tellus, eu porttitor nisl ipsum eu massa.</p>
+                            <form id="contact-form" class="contact-form cf-style-1 inner-top-xs" method="post" >
+                                <div class="row field-row">
+                                    <div class="col-xs-12 col-sm-6">
+                                        <label>Your Name*</label>
+                                        <input class="le-input" >
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6">
+                                        <label>Your Email*</label>
+                                        <input class="le-input" >
+                                    </div>
+                                </div><!-- /.field-row -->
+
+                                <div class="field-row">
+                                    <label>Subject</label>
+                                    <input type="text" class="le-input">
+                                </div><!-- /.field-row -->
+
+                                <div class="field-row">
+                                    <label>Your Message</label>
+                                    <textarea rows="8" class="le-input"></textarea>
+                                </div><!-- /.field-row -->
+
+                                <div class="buttons-holder">
+                                    <button type="submit" class="le-button huge">Send Message</button>
+                                </div><!-- /.buttons-holder -->
+                            </form><!-- /.contact-form -->
+                        </section><!-- /.leave-a-message -->
+                    </div><!-- /.col -->
+
+
+                </div><!-- /.row -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- JavaScripts placed at the end of the document so the pages load faster -->
 <script src="{{ asset('/js/jquery-1.10.2.min.js', $is_secured) }}"></script>
