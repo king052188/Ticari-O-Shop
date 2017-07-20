@@ -12,19 +12,21 @@
 */
 
 
+
+
+
+Auth::routes();
+
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/contact-us', 'PageController@contact');
 
-Route::get('/{country}/{category}/{item}', 'ItemController@show_item');
-
-Route::get('/{hex}', 'ItemController@validate_item');
+Route::get('/home', 'HomeController@index')->name('home');
 
 
-
-
-
-
-
+//Route::get('/contact-us', 'PageController@contact');
+//
+//Route::get('/{country}/{category}/{item}', 'ItemController@show_item');
+//
+//Route::get('/{hex}', 'ItemController@validate_item');
